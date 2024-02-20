@@ -24,7 +24,7 @@ RSA Playground is a Java application designed to demonstrate the key features of
 - Karim Izm
 - Salma Lemrazzeq
 - Abdelah Ressal
-- Mohamed Otchoui
+- Mohamed Ouchtoui 
 
 
 **Contact:**
