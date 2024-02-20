@@ -1,6 +1,6 @@
 **RSA Playground**
 
-This project is part of Prof. Dr. Hanaa Hachimi's cryptography subject.
+This project is part of Prof. Dr. Hanaa Hachimi's cryptography subject Master SSI first year at Ensa Kenitra.
 
 **Description:**
 RSA Playground is a Java application designed to demonstrate the key features of the RSA algorithm. It allows users to generate RSA key pairs, encrypt and decrypt text, and encrypt and decrypt text files. The application utilizes JavaFX for the user interface and requires the JFoenix library to be imported.
