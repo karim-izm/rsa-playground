@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ssi.master.rsaplayground.controllers.HomeController">
+   <children>
+      <AnchorPane layoutX="199.2" prefHeight="70.0" prefWidth="701.0" style="-fx-background-color: #282828;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="logoImageView" fitHeight="67.0" fitWidth="179.0" layoutX="14.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ensa-logo.png" />
+               </image></ImageView>
+            <Label layoutX="327.0" layoutY="22.0" text="RSA Algorithm - Playground" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXTextArea fx:id="text" layoutX="326.0" layoutY="168.0" prefHeight="154.0" prefWidth="166.0" style="-fx-border-color: #262626;" />
+      <JFXButton fx:id="encryptButton" layoutX="380.0" layoutY="340.0" style="-fx-border-color: #262626; -fx-border-radius: 10;" text="Encrypt" />
+      <AnchorPane layoutX="5.0" layoutY="160.0" prefHeight="178.0" prefWidth="274.0" style="-fx-background-color: #262626; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="75.0" layoutY="14.0" text="Key Pair Generator" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="16.0" />
+               </font></Label>
+            <JFXButton fx:id="generatePublicKeyButton" layoutX="79.0" layoutY="96.0" style="-fx-border-color: white; -fx-border-radius: 10;" text="Generate Key Pairs" textFill="WHITE" />
+            <Label layoutX="68.0" layoutY="58.0" text="Key length" textFill="WHITE" />
+            <JFXComboBox fx:id="lengthComboBox" focusColor="WHITE" layoutX="148.0" layoutY="53.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 10; -fx-background-radius: 10;" unFocusColor="BLACK" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="538.0" layoutY="116.0" text="Plain Text Encrypyion &amp; Decryption">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Separator layoutX="304.0" layoutY="160.0" orientation="VERTICAL" prefHeight="227.0" prefWidth="9.0" />
+      <JFXTextArea fx:id="outputTextArea" editable="false" layoutX="611.0" layoutY="168.0" prefHeight="154.0" prefWidth="274.0" style="-fx-border-color: #262626;" />
+      <JFXButton fx:id="decryptButton" layoutX="783.0" layoutY="340.0" style="-fx-border-radius: 10; -fx-border-color: #262626;" text="Decrypt" />
+      <JFXButton fx:id="choosePrivateKeyButton" layoutX="658.0" layoutY="341.0" style="-fx-background-color: #262626;" text="Choose Private Key" textFill="WHITE" />
+      <Label layoutX="514.0" layoutY="212.0" text="RSA Algorithm" />
+      <Label layoutX="540.0" layoutY="230.0" text="⇔">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="162.0" layoutY="419.0" prefHeight="0.0" prefWidth="553.0" />
+      <Label layoutX="449.0" layoutY="457.0" text="File Encryption">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="uploadTxtFile" layoutX="449.0" layoutY="496.0" style="-fx-background-color: #262626;" text="Upload a file" textFill="WHITE" />
+      <JFXButton fx:id="encryptTxtButton" layoutX="362.0" layoutY="542.0" style="-fx-border-color: #262626; -fx-border-radius: 10;" text="Encrypt Text File" />
+      <JFXButton fx:id="decryptTxtButton" layoutX="517.0" layoutY="542.0" style="-fx-border-color: #262626; -fx-border-radius: 10;" text="Decrypt Text File" />
+
+   </children>
+</AnchorPane>
